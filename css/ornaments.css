@@ -1,52 +1,63 @@
 /* ==========================================================================
-   Ethnic Ornament Styles
-   Traditional patterns and decorative elements
+   Кыргызские национальные орнаменты (Кыргыз оймо)
+   Traditional Kyrgyz patterns and decorative elements
+   Tunduk, Kochkor Muyuz, Shyrdak, Kyyal motifs
    ========================================================================== */
 
-/* ---------- Top Ethnic Border ---------- */
+/* ---------- Top Ethnic Border — Shyrdak pattern ---------- */
 .ethno-border-top {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 6px;
     z-index: 1001;
-    background: repeating-linear-gradient(
-        90deg,
-        var(--color-primary) 0px,
-        var(--color-primary) 20px,
-        var(--color-secondary) 20px,
-        var(--color-secondary) 40px,
-        var(--color-accent) 40px,
-        var(--color-accent) 60px,
-        var(--color-secondary) 60px,
-        var(--color-secondary) 80px
-    );
+    background:
+        repeating-linear-gradient(
+            90deg,
+            var(--color-primary) 0px,
+            var(--color-primary) 12px,
+            var(--color-secondary) 12px,
+            var(--color-secondary) 16px,
+            var(--color-primary) 16px,
+            var(--color-primary) 28px,
+            var(--color-accent) 28px,
+            var(--color-accent) 32px,
+            var(--color-secondary) 32px,
+            var(--color-secondary) 44px,
+            var(--color-primary) 44px,
+            var(--color-primary) 48px
+        );
 }
 
-/* ---------- Bottom Ethnic Border ---------- */
+/* ---------- Bottom Ethnic Border — Shyrdak pattern ---------- */
 .ethno-border-bottom {
-    height: 4px;
-    background: repeating-linear-gradient(
-        90deg,
-        var(--color-secondary) 0px,
-        var(--color-secondary) 20px,
-        var(--color-primary) 20px,
-        var(--color-primary) 40px,
-        var(--color-accent) 40px,
-        var(--color-accent) 60px,
-        var(--color-secondary) 60px,
-        var(--color-secondary) 80px
-    );
+    height: 6px;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            var(--color-secondary) 0px,
+            var(--color-secondary) 12px,
+            var(--color-primary) 12px,
+            var(--color-primary) 16px,
+            var(--color-accent) 16px,
+            var(--color-accent) 28px,
+            var(--color-primary) 28px,
+            var(--color-primary) 32px,
+            var(--color-secondary) 32px,
+            var(--color-secondary) 44px,
+            var(--color-primary) 44px,
+            var(--color-primary) 48px
+        );
 }
 
-/* ---------- Ethnic Divider ---------- */
+/* ---------- Ethnic Divider — Kochkor Muyuz (Ram's Horns) ---------- */
 .ethno-divider {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: var(--space-2xl) auto;
-    max-width: 400px;
+    max-width: 500px;
     height: 40px;
     position: relative;
 }
@@ -57,40 +68,54 @@
     left: 0;
     right: 0;
     top: 50%;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(
         90deg,
         transparent,
-        var(--color-secondary) 20%,
+        var(--color-primary) 15%,
+        var(--color-secondary) 35%,
         var(--color-primary) 50%,
-        var(--color-secondary) 80%,
+        var(--color-secondary) 65%,
+        var(--color-primary) 85%,
         transparent
     );
 }
 
 .ethno-divider::after {
-    content: '◆ ◆ ◆';
+    content: '';
     position: relative;
-    background: var(--color-cream);
-    padding: 0 var(--space-lg);
-    color: var(--color-secondary);
-    font-size: 0.7rem;
-    letter-spacing: 8px;
+    width: 140px;
+    height: 20px;
     z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 20'%3E%3Cpath d='M70 2 C60 2 55 10 45 10 C35 10 35 2 25 2 C18 2 15 8 10 10 M70 2 C80 2 85 10 95 10 C105 10 105 2 115 2 C122 2 125 8 130 10' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Cpath d='M70 18 C60 18 55 10 45 10 C35 10 35 18 25 18 C18 18 15 12 10 10 M70 18 C80 18 85 10 95 10 C105 10 105 18 115 18 C122 18 125 12 130 10' fill='none' stroke='%23C8963E' stroke-width='2'/%3E%3Ccircle cx='70' cy='10' r='3' fill='%238B2500'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.hero .ethno-divider::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(212, 168, 75, 0.4) 15%,
+        rgba(226, 189, 108, 0.6) 50%,
+        rgba(212, 168, 75, 0.4) 85%,
+        transparent
+    );
 }
 
 .hero .ethno-divider::after {
-    background: transparent;
-    background: linear-gradient(135deg, var(--color-cream), var(--color-sand));
-    padding: 0 var(--space-xl);
+    width: 180px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 20'%3E%3Cpath d='M70 2 C60 2 55 10 45 10 C35 10 35 2 25 2 C18 2 15 8 10 10 M70 2 C80 2 85 10 95 10 C105 10 105 2 115 2 C122 2 125 8 130 10' fill='none' stroke='%23D4A84B' stroke-width='2'/%3E%3Cpath d='M70 18 C60 18 55 10 45 10 C35 10 35 18 25 18 C18 18 15 12 10 10 M70 18 C80 18 85 10 95 10 C105 10 105 18 115 18 C122 18 125 12 130 10' fill='none' stroke='%23E2BD6C' stroke-width='2'/%3E%3Ccircle cx='70' cy='10' r='3' fill='%23D4A84B'/%3E%3C/svg%3E");
 }
 
-/* ---------- Corner Ornaments ---------- */
+/* ---------- Corner Ornaments — Кыял (Wave Scroll) ---------- */
 .ethno-corner {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    opacity: 0.3;
+    width: 80px;
+    height: 80px;
+    opacity: 0.25;
 }
 
 .ethno-corner--left {
@@ -103,112 +128,90 @@
     top: 0;
 }
 
-.ethno-corner::before,
-.ethno-corner::after {
+.ethno-corner--left::before {
     content: '';
     position: absolute;
-    background: var(--color-primary);
-}
-
-.ethno-corner--left::before {
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 2px;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-left: 3px solid var(--color-primary);
+    border-top: 3px solid var(--color-primary);
+    border-radius: 8px 0 0 0;
 }
 
 .ethno-corner--left::after {
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 40px;
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid var(--color-secondary);
+    border-top: 2px solid var(--color-secondary);
+    border-radius: 6px 0 0 0;
 }
 
 .ethno-corner--right::before {
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 2px;
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-right: 3px solid var(--color-primary);
+    border-top: 3px solid var(--color-primary);
+    border-radius: 0 8px 0 0;
 }
 
 .ethno-corner--right::after {
-    top: 0;
-    right: 0;
-    width: 2px;
-    height: 40px;
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid var(--color-secondary);
+    border-top: 2px solid var(--color-secondary);
+    border-radius: 0 6px 0 0;
 }
 
-/* ---------- Hero Ornaments (large side patterns) ---------- */
+/* ---------- Hero Ornaments — Kochkor Muyuz Side Patterns ---------- */
 .hero__ornament-left,
 .hero__ornament-right {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 150px;
-    height: 500px;
-    opacity: 0.06;
+    width: 120px;
+    height: 400px;
+    opacity: 0.12;
     pointer-events: none;
 }
 
 .hero__ornament-left {
-    left: 20px;
-    background: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 20px,
-        var(--color-primary) 20px,
-        var(--color-primary) 22px,
-        transparent 22px,
-        transparent 40px
-    ),
-    repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 20px,
-        var(--color-primary) 20px,
-        var(--color-primary) 22px,
-        transparent 22px,
-        transparent 40px
-    );
+    left: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 400'%3E%3Cg fill='none' stroke='%238B2500' stroke-width='2'%3E%3Cpath d='M40 0 C40 30 10 30 10 60 C10 90 40 90 40 120 C40 150 10 150 10 180 C10 210 40 210 40 240 C40 270 10 270 10 300 C10 330 40 330 40 360 C40 380 25 395 15 400'/%3E%3Cpath d='M60 0 C60 30 30 30 30 60 C30 90 60 90 60 120 C60 150 30 150 30 180 C30 210 60 210 60 240 C60 270 30 270 30 300 C30 330 60 330 60 360 C60 380 45 395 35 400'/%3E%3Ccircle cx='25' cy='60' r='4'/%3E%3Ccircle cx='45' cy='120' r='4'/%3E%3Ccircle cx='25' cy='180' r='4'/%3E%3Ccircle cx='45' cy='240' r='4'/%3E%3Ccircle cx='25' cy='300' r='4'/%3E%3Ccircle cx='45' cy='360' r='4'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 80px auto;
 }
 
 .hero__ornament-right {
-    right: 20px;
-    background: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 20px,
-        var(--color-secondary) 20px,
-        var(--color-secondary) 22px,
-        transparent 22px,
-        transparent 40px
-    ),
-    repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 20px,
-        var(--color-secondary) 20px,
-        var(--color-secondary) 22px,
-        transparent 22px,
-        transparent 40px
-    );
+    right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 400'%3E%3Cg fill='none' stroke='%23C8963E' stroke-width='2'%3E%3Cpath d='M40 0 C40 30 70 30 70 60 C70 90 40 90 40 120 C40 150 70 150 70 180 C70 210 40 210 40 240 C40 270 70 270 70 300 C70 330 40 330 40 360 C40 380 55 395 65 400'/%3E%3Cpath d='M20 0 C20 30 50 30 50 60 C50 90 20 90 20 120 C20 150 50 150 50 180 C50 210 20 210 20 240 C20 270 50 270 50 300 C50 330 20 330 20 360 C20 380 35 395 45 400'/%3E%3Ccircle cx='55' cy='60' r='4'/%3E%3Ccircle cx='35' cy='120' r='4'/%3E%3Ccircle cx='55' cy='180' r='4'/%3E%3Ccircle cx='35' cy='240' r='4'/%3E%3Ccircle cx='55' cy='300' r='4'/%3E%3Ccircle cx='35' cy='360' r='4'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-size: 80px auto;
 }
 
-/* ---------- Pattern Background (Stats section) ---------- */
+/* ---------- Pattern Background — Shyrdak Diamond Pattern ---------- */
 .ethno-pattern-bg {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.05;
-    background-image:
-        linear-gradient(45deg, var(--color-white) 25%, transparent 25%),
-        linear-gradient(-45deg, var(--color-white) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, var(--color-white) 75%),
-        linear-gradient(-45deg, transparent 75%, var(--color-white) 75%);
-    background-size: 40px 40px;
-    background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M30 15 L45 30 L30 45 L15 30 Z' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23fff'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
 }
 
 /* ---------- CTA Block Ornament ---------- */
@@ -217,20 +220,28 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--color-primary) 10%,
-        var(--color-secondary) 30%,
-        var(--color-primary) 50%,
-        var(--color-secondary) 70%,
-        var(--color-primary) 90%,
-        transparent
-    );
+    height: 6px;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            transparent 4px,
+            var(--color-primary) 4px,
+            var(--color-primary) 16px,
+            transparent 16px,
+            transparent 20px,
+            var(--color-secondary) 20px,
+            var(--color-secondary) 32px,
+            transparent 32px,
+            transparent 36px,
+            var(--color-primary) 36px,
+            var(--color-primary) 48px,
+            transparent 48px,
+            transparent 52px
+        );
 }
 
-/* ---------- Section Decorative Lines ---------- */
+/* ---------- Section Decorative Lines — Kyrgyz wave ---------- */
 .section--sports::before,
 .section--news::before {
     content: '';
@@ -238,64 +249,72 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    height: 1px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--color-secondary),
-        transparent
-    );
+    width: 300px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 20'%3E%3Cpath d='M0 10 C25 10 25 2 50 2 C75 2 75 10 100 10 C125 10 125 2 150 2 C175 2 175 10 200 10 C225 10 225 2 250 2 C275 2 275 10 300 10' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
 }
 
-/* ---------- Page Header Ornament ---------- */
+/* ---------- Page Header Ornament — Shyrdak border ---------- */
 .page-header::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: repeating-linear-gradient(
-        90deg,
-        var(--color-primary) 0px,
-        var(--color-primary) 15px,
-        transparent 15px,
-        transparent 20px,
-        var(--color-secondary) 20px,
-        var(--color-secondary) 35px,
-        transparent 35px,
-        transparent 40px
-    );
+    height: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 8'%3E%3Crect x='0' y='0' width='8' height='8' fill='%238B2500'/%3E%3Crect x='8' y='0' width='4' height='8' fill='%23C8963E'/%3E%3Crect x='12' y='0' width='12' height='8' fill='%238B2500'/%3E%3Crect x='24' y='0' width='4' height='8' fill='%231B4332'/%3E%3Crect x='28' y='0' width='8' height='8' fill='%23C8963E'/%3E%3Crect x='36' y='0' width='4' height='8' fill='%238B2500'/%3E%3Crect x='40' y='0' width='8' height='8' fill='%231B4332'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 48px 8px;
 }
 
 .page-header::after {
-    content: '◆';
+    content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--color-primary);
-    font-size: 0.8rem;
-    background: var(--color-sand-light);
-    padding: 0 var(--space-sm);
+    width: 30px;
+    height: 30px;
     z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 3 L27 15 L15 27 L3 15 Z' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='15' cy='15' r='3' fill='%23C8963E'/%3E%3C/svg%3E");
+    background-color: var(--color-surface);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-/* ---------- Ethnic SVG Pattern for sections ---------- */
+/* ---------- Events section — Tunduk-inspired radial pattern ---------- */
 .section--events::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
     width: 200px;
     height: 200px;
-    opacity: 0.03;
-    background: 
-        radial-gradient(circle, var(--color-primary) 1px, transparent 1px),
-        radial-gradient(circle, var(--color-primary) 1px, transparent 1px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='100' cy='100' r='70' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='100' cy='100' r='45' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='100' cy='100' r='20' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Cline x1='100' y1='5' x2='100' y2='195' stroke='%238B2500' stroke-width='1'/%3E%3Cline x1='5' y1='100' x2='195' y2='100' stroke='%238B2500' stroke-width='1'/%3E%3Cline x1='30' y1='30' x2='170' y2='170' stroke='%238B2500' stroke-width='1'/%3E%3Cline x1='170' y1='30' x2='30' y2='170' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M100 30 C110 50 130 50 130 70 C130 85 115 90 100 80 C85 90 70 85 70 70 C70 50 90 50 100 30' fill='none' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M170 100 C150 110 150 130 130 130 C115 130 110 115 120 100 C110 85 115 70 130 70 C150 70 150 90 170 100' fill='none' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M100 170 C90 150 70 150 70 130 C70 115 85 110 100 120 C115 110 130 115 130 130 C130 150 110 150 100 170' fill='none' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M30 100 C50 90 50 70 70 70 C85 70 90 85 80 100 C90 115 85 130 70 130 C50 130 50 110 30 100' fill='none' stroke='%238B2500' stroke-width='1'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ---------- Tunduk Background for Hero ---------- */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    opacity: 0.06;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Ccircle cx='250' cy='250' r='240' fill='none' stroke='%23D4A84B' stroke-width='3'/%3E%3Ccircle cx='250' cy='250' r='200' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='250' cy='250' r='160' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='250' cy='250' r='120' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='250' r='80' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='250' r='40' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Cline x1='250' y1='10' x2='250' y2='490' stroke='%238B2500' stroke-width='1.5'/%3E%3Cline x1='10' y1='250' x2='490' y2='250' stroke='%238B2500' stroke-width='1.5'/%3E%3Cline x1='75' y1='75' x2='425' y2='425' stroke='%238B2500' stroke-width='1'/%3E%3Cline x1='425' y1='75' x2='75' y2='425' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M250 50 C260 80 290 100 290 130 C290 160 260 170 250 150 C240 170 210 160 210 130 C210 100 240 80 250 50' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M450 250 C420 260 400 290 370 290 C340 290 330 260 350 250 C330 240 340 210 370 210 C400 210 420 240 450 250' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M250 450 C240 420 210 400 210 370 C210 340 240 330 250 350 C260 330 290 340 290 370 C290 400 260 420 250 450' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M50 250 C80 240 100 210 130 210 C160 210 170 240 150 250 C170 260 160 290 130 290 C100 290 80 260 50 250' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 /* ---------- Responsive Ornaments ---------- */
@@ -305,18 +324,29 @@
         display: none;
     }
 
+    .hero::before {
+        width: 300px;
+        height: 300px;
+    }
+
     .ethno-corner {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 
     .ethno-corner--left::before,
     .ethno-corner--right::before {
-        width: 25px;
+        width: 35px;
+        height: 35px;
     }
 
     .ethno-corner--left::after,
     .ethno-corner--right::after {
-        height: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .ethno-divider {
+        max-width: 300px;
     }
 }

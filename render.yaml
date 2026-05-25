@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: national-sports
+    runtime: node
+    branch: devin/1779701455-admin-panel
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
