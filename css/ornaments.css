@@ -93,9 +93,21 @@
     background-position: center;
 }
 
+.hero .ethno-divider::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(212, 168, 75, 0.4) 15%,
+        rgba(226, 189, 108, 0.6) 50%,
+        rgba(212, 168, 75, 0.4) 85%,
+        transparent
+    );
+}
+
 .hero .ethno-divider::after {
     width: 180px;
     height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 20'%3E%3Cpath d='M70 2 C60 2 55 10 45 10 C35 10 35 2 25 2 C18 2 15 8 10 10 M70 2 C80 2 85 10 95 10 C105 10 105 2 115 2 C122 2 125 8 130 10' fill='none' stroke='%23D4A84B' stroke-width='2'/%3E%3Cpath d='M70 18 C60 18 55 10 45 10 C35 10 35 18 25 18 C18 18 15 12 10 10 M70 18 C80 18 85 10 95 10 C105 10 105 18 115 18 C122 18 125 12 130 10' fill='none' stroke='%23E2BD6C' stroke-width='2'/%3E%3Ccircle cx='70' cy='10' r='3' fill='%23D4A84B'/%3E%3C/svg%3E");
 }
 
 /* ---------- Corner Ornaments — Кыял (Wave Scroll) ---------- */
@@ -172,7 +184,7 @@
     transform: translateY(-50%);
     width: 120px;
     height: 400px;
-    opacity: 0.08;
+    opacity: 0.12;
     pointer-events: none;
 }
 
@@ -268,7 +280,7 @@
     height: 30px;
     z-index: 1;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 3 L27 15 L15 27 L3 15 Z' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='15' cy='15' r='3' fill='%23C8963E'/%3E%3C/svg%3E");
-    background-color: var(--color-sand-light);
+    background-color: var(--color-surface);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -297,9 +309,9 @@
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
-    opacity: 0.03;
+    opacity: 0.06;
     pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Ccircle cx='250' cy='250' r='240' fill='none' stroke='%238B2500' stroke-width='3'/%3E%3Ccircle cx='250' cy='250' r='200' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='250' cy='250' r='160' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='250' cy='250' r='120' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='250' r='80' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='250' r='40' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Cline x1='250' y1='10' x2='250' y2='490' stroke='%238B2500' stroke-width='1.5'/%3E%3Cline x1='10' y1='250' x2='490' y2='250' stroke='%238B2500' stroke-width='1.5'/%3E%3Cline x1='75' y1='75' x2='425' y2='425' stroke='%238B2500' stroke-width='1'/%3E%3Cline x1='425' y1='75' x2='75' y2='425' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M250 50 C260 80 290 100 290 130 C290 160 260 170 250 150 C240 170 210 160 210 130 C210 100 240 80 250 50' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M450 250 C420 260 400 290 370 290 C340 290 330 260 350 250 C330 240 340 210 370 210 C400 210 420 240 450 250' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M250 450 C240 420 210 400 210 370 C210 340 240 330 250 350 C260 330 290 340 290 370 C290 400 260 420 250 450' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M50 250 C80 240 100 210 130 210 C160 210 170 240 150 250 C170 260 160 290 130 290 C100 290 80 260 50 250' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Ccircle cx='250' cy='250' r='240' fill='none' stroke='%23D4A84B' stroke-width='3'/%3E%3Ccircle cx='250' cy='250' r='200' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='250' cy='250' r='160' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Ccircle cx='250' cy='250' r='120' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='250' r='80' fill='none' stroke='%238B2500' stroke-width='1.5'/%3E%3Ccircle cx='250' cy='250' r='40' fill='none' stroke='%238B2500' stroke-width='2'/%3E%3Cline x1='250' y1='10' x2='250' y2='490' stroke='%238B2500' stroke-width='1.5'/%3E%3Cline x1='10' y1='250' x2='490' y2='250' stroke='%238B2500' stroke-width='1.5'/%3E%3Cline x1='75' y1='75' x2='425' y2='425' stroke='%238B2500' stroke-width='1'/%3E%3Cline x1='425' y1='75' x2='75' y2='425' stroke='%238B2500' stroke-width='1'/%3E%3Cpath d='M250 50 C260 80 290 100 290 130 C290 160 260 170 250 150 C240 170 210 160 210 130 C210 100 240 80 250 50' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M450 250 C420 260 400 290 370 290 C340 290 330 260 350 250 C330 240 340 210 370 210 C400 210 420 240 450 250' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M250 450 C240 420 210 400 210 370 C210 340 240 330 250 350 C260 330 290 340 290 370 C290 400 260 420 250 450' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3Cpath d='M50 250 C80 240 100 210 130 210 C160 210 170 240 150 250 C170 260 160 290 130 290 C100 290 80 260 50 250' fill='none' stroke='%23C8963E' stroke-width='1.5'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
