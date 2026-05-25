@@ -219,8 +219,8 @@ app.get('/about', (req, res) => res.sendFile(path.join(__dirname, 'about.html'))
 app.get('/contacts', (req, res) => res.sendFile(path.join(__dirname, 'contacts.html')));
 
 // Fallback for .html files
-app.get('*.html', (req, res) => {
-    const filePath = path.join(__dirname, req.path);
+app.get('/:page.html', (req, res) => {
+    const filePath = path.join(__dirname, req.params.page + '.html');
     if (fs.existsSync(filePath)) return res.sendFile(filePath);
     res.status(404).send('Page not found');
 });
