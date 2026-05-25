@@ -1,0 +1,17 @@
+{
+  "name": "national-sports-website",
+  "version": "1.0.0",
+  "description": "Веб-сайт в этно-стиле для Дирекции национальных видов спорта — организации, занимающейся сохранением, развитием и популяризацией традиционных видов спорта.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-session": "^1.19.0"
+  }
+}
