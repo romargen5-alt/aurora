@@ -1426,3 +1426,111 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------- News Page ---------- */
+.news-page-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.news-page-card {
+    display: flex;
+    gap: var(--space-xl);
+    background: var(--color-cream);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.news-page-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+    transform: scaleY(0);
+    transition: transform var(--transition-base);
+}
+
+.news-page-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-secondary);
+}
+
+.news-page-card:hover::before {
+    transform: scaleY(1);
+}
+
+.news-page-card__date {
+    flex-shrink: 0;
+    width: 80px;
+    text-align: center;
+    padding: var(--space-md);
+    background: var(--color-sand);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-page-card__day {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.news-page-card__month {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: var(--space-xs);
+}
+
+.news-page-card__content {
+    flex: 1;
+}
+
+.news-page-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: var(--space-md);
+}
+
+.news-page-card__text {
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+.news-empty {
+    text-align: center;
+    padding: var(--space-4xl);
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .news-page-card {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .news-page-card__date {
+        width: auto;
+        flex-direction: row;
+        gap: var(--space-sm);
+    }
+}
