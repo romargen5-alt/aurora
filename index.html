@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дирекция национальных видов спорта</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ornaments.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Ethnic ornament top border -->
+    <div class="ethno-border-top" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <div class="logo__icon">
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 5 L30 55 M5 30 L55 30 M12 12 L48 48 M48 12 L12 48" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                            <circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__title">Дирекция</span>
+                        <span class="logo__subtitle">национальных видов спорта</span>
+                    </div>
+                </a>
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                        <li class="nav__item"><a href="sports.html" class="nav__link">Виды спорта</a></li>
+                        <li class="nav__item"><a href="events.html" class="nav__link">Мероприятия</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__ornament-left" aria-hidden="true"></div>
+        <div class="hero__ornament-right" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="ethno-divider" aria-hidden="true"></div>
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Сохраняем традиции</span>
+                    <span class="hero__title-line hero__title-line--accent">Развиваем будущее</span>
+                </h1>
+                <p class="hero__text">
+                    Дирекция национальных видов спорта — организация, объединяющая усилия по сохранению, 
+                    развитию и популяризации традиционных видов спорта народов нашей страны.
+                </p>
+                <div class="hero__buttons">
+                    <a href="sports.html" class="btn btn--primary">Виды спорта</a>
+                    <a href="events.html" class="btn btn--outline">Календарь событий</a>
+                </div>
+                <div class="ethno-divider" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- National Sports Section -->
+    <section class="section section--sports" id="sports">
+        <div class="container">
+            <div class="section__header">
+                <div class="ethno-corner ethno-corner--left" aria-hidden="true"></div>
+                <h2 class="section__title">Национальные виды спорта</h2>
+                <p class="section__subtitle">Богатое наследие спортивных традиций наших народов</p>
+                <div class="ethno-corner ethno-corner--right" aria-hidden="true"></div>
+            </div>
+            <div class="sports-grid">
+                <article class="sport-card" data-aos="fade-up">
+                    <div class="sport-card__icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="15" r="8" fill="currentColor"/>
+                            <path d="M25 30 Q40 20 55 30 L50 55 L45 45 L40 60 L35 45 L30 55 Z" fill="currentColor" opacity="0.8"/>
+                            <line x1="20" y1="35" x2="60" y2="35" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="sport-card__title">Борьба курэш</h3>
+                    <p class="sport-card__text">Традиционная борьба на поясах — древнейший вид национального единоборства, символ силы и чести.</p>
+                    <a href="sports.html#kuresh" class="sport-card__link">Подробнее →</a>
+                </article>
+                <article class="sport-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sport-card__icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="40" cy="60" rx="30" ry="8" fill="currentColor" opacity="0.3"/>
+                            <path d="M25 55 L40 10 L55 55" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="40" cy="10" r="4" fill="currentColor"/>
+                            <path d="M30 40 L50 40" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="sport-card__title">Стрельба из лука</h3>
+                    <p class="sport-card__text">Искусство меткой стрельбы из традиционного лука — мастерство, передаваемое из поколения в поколение.</p>
+                    <a href="sports.html#archery" class="sport-card__link">Подробнее →</a>
+                </article>
+                <article class="sport-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sport-card__icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 50 Q25 20 40 35 Q55 50 65 25" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="40" cy="35" r="5" fill="currentColor"/>
+                            <path d="M20 60 L60 60" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4"/>
+                        </svg>
+                    </div>
+                    <h3 class="sport-card__title">Конные скачки</h3>
+                    <p class="sport-card__text">Байга и другие конные состязания — неотъемлемая часть культурного наследия кочевых народов.</p>
+                    <a href="sports.html#horse" class="sport-card__link">Подробнее →</a>
+                </article>
+                <article class="sport-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="sport-card__icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="40" cy="40" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="40" cy="40" r="5" fill="currentColor"/>
+                            <path d="M40 15 L40 5 M40 65 L40 75 M15 40 L5 40 M65 40 L75 40" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="sport-card__title">Мас-рестлинг</h3>
+                    <p class="sport-card__text">Якутское перетягивание палки — уникальный вид спорта, демонстрирующий силу и технику.</p>
+                    <a href="sports.html#mas" class="sport-card__link">Подробнее →</a>
+                </article>
+                <article class="sport-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="sport-card__icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="25" width="50" height="35" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="40" y1="25" x2="40" y2="60" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="42" r="8" fill="currentColor" opacity="0.3"/>
+                            <circle cx="50" cy="42" r="8" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3 class="sport-card__title">Тогуз коргоол</h3>
+                    <p class="sport-card__text">Древняя настольная игра — интеллектуальное состязание, развивающее стратегическое мышление.</p>
+                    <a href="sports.html#toguz" class="sport-card__link">Подробнее →</a>
+                </article>
+                <article class="sport-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="sport-card__icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="18" r="8" fill="currentColor"/>
+                            <path d="M30 28 L50 28 L55 50 L45 45 L40 65 L35 45 L25 50 Z" fill="currentColor" opacity="0.8"/>
+                            <path d="M15 35 C25 30 30 40 25 45" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M65 35 C55 30 50 40 55 45" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="sport-card__title">Хапсагай</h3>
+                    <p class="sport-card__text">Якутская национальная борьба — быстрая и динамичная, требующая ловкости и реакции.</p>
+                    <a href="sports.html#hapsagai" class="sport-card__link">Подробнее →</a>
+                </article>
+            </div>
+            <div class="section__action">
+                <a href="sports.html" class="btn btn--primary">Все виды спорта</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section section--events" id="events">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Ближайшие мероприятия</h2>
+                <p class="section__subtitle">Расписание соревнований и фестивалей</p>
+            </div>
+            <div class="events-list">
+                <article class="event-card">
+                    <div class="event-card__date">
+                        <span class="event-card__day">15</span>
+                        <span class="event-card__month">Июня</span>
+                    </div>
+                    <div class="event-card__content">
+                        <h3 class="event-card__title">Чемпионат по борьбе курэш</h3>
+                        <p class="event-card__location">📍 г. Казань, Дворец единоборств «Ак Барс»</p>
+                        <p class="event-card__desc">Ежегодный чемпионат по традиционной борьбе на поясах среди мужчин и женщин.</p>
+                        <div class="event-card__tags">
+                            <span class="tag">Борьба</span>
+                            <span class="tag">Чемпионат</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <div class="event-card__date">
+                        <span class="event-card__day">22</span>
+                        <span class="event-card__month">Июня</span>
+                    </div>
+                    <div class="event-card__content">
+                        <h3 class="event-card__title">Фестиваль «Наследие предков»</h3>
+                        <p class="event-card__location">📍 г. Якутск, Стадион «Туймаада»</p>
+                        <p class="event-card__desc">Масштабный фестиваль национальных видов спорта с показательными выступлениями и мастер-классами.</p>
+                        <div class="event-card__tags">
+                            <span class="tag">Фестиваль</span>
+                            <span class="tag">Мас-рестлинг</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <div class="event-card__date">
+                        <span class="event-card__day">05</span>
+                        <span class="event-card__month">Июля</span>
+                    </div>
+                    <div class="event-card__content">
+                        <h3 class="event-card__title">Турнир по стрельбе из лука</h3>
+                        <p class="event-card__location">📍 г. Улан-Удэ, Спортивный комплекс</p>
+                        <p class="event-card__desc">Открытый турнир по традиционной стрельбе из национального лука.</p>
+                        <div class="event-card__tags">
+                            <span class="tag">Стрельба из лука</span>
+                            <span class="tag">Турнир</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="section__action">
+                <a href="events.html" class="btn btn--outline">Все мероприятия</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section--stats">
+        <div class="ethno-pattern-bg" aria-hidden="true"></div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-item__number" data-target="25">0</span>
+                    <span class="stat-item__label">Видов спорта</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__number" data-target="48">0</span>
+                    <span class="stat-item__label">Регионов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__number" data-target="150">0</span>
+                    <span class="stat-item__label">Мероприятий в год</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__number" data-target="10000">0</span>
+                    <span class="stat-item__label">Спортсменов</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section section--news" id="news">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Новости</h2>
+                <p class="section__subtitle">Последние события из мира национальных видов спорта</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-card__image">
+                        <div class="news-card__placeholder">
+                            <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="120" height="80" fill="#8B4513" opacity="0.1"/>
+                                <circle cx="60" cy="30" r="12" fill="#8B4513" opacity="0.3"/>
+                                <path d="M30 60 L50 35 L70 50 L90 30 L110 55 L110 80 L10 80 Z" fill="#8B4513" opacity="0.2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-card__content">
+                        <time class="news-card__date">20 мая 2026</time>
+                        <h3 class="news-card__title">Россия примет Международный фестиваль национальных видов спорта</h3>
+                        <p class="news-card__text">В этом году Россия станет площадкой для проведения крупнейшего международного фестиваля...</p>
+                        <a href="#" class="news-card__link">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card__image">
+                        <div class="news-card__placeholder">
+                            <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="120" height="80" fill="#8B4513" opacity="0.1"/>
+                                <path d="M40 20 L60 10 L80 20 L80 60 L40 60 Z" fill="#8B4513" opacity="0.2"/>
+                                <rect x="50" y="40" width="20" height="20" fill="#8B4513" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-card__content">
+                        <time class="news-card__date">15 мая 2026</time>
+                        <h3 class="news-card__title">Открытие нового центра подготовки спортсменов в Казани</h3>
+                        <p class="news-card__text">В Казани торжественно открыт современный центр подготовки атлетов национальных видов спорта...</p>
+                        <a href="#" class="news-card__link">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card__image">
+                        <div class="news-card__placeholder">
+                            <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="120" height="80" fill="#8B4513" opacity="0.1"/>
+                                <circle cx="40" cy="40" r="15" fill="#8B4513" opacity="0.2"/>
+                                <circle cx="80" cy="40" r="15" fill="#8B4513" opacity="0.2"/>
+                                <path d="M55 40 L65 40" stroke="#8B4513" stroke-width="3" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="news-card__content">
+                        <time class="news-card__date">10 мая 2026</time>
+                        <h3 class="news-card__title">Мас-рестлинг включён в программу Всемирных игр</h3>
+                        <p class="news-card__text">Историческое решение — мас-рестлинг официально включён в программу Всемирных игр...</p>
+                        <a href="#" class="news-card__link">Читать далее →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--cta">
+        <div class="container">
+            <div class="cta-block">
+                <div class="cta-block__ornament" aria-hidden="true"></div>
+                <h2 class="cta-block__title">Присоединяйтесь к движению</h2>
+                <p class="cta-block__text">Станьте частью сообщества, сохраняющего и развивающего национальные виды спорта</p>
+                <div class="cta-block__buttons">
+                    <a href="contacts.html" class="btn btn--primary btn--lg">Связаться с нами</a>
+                    <a href="about.html" class="btn btn--outline btn--lg">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="ethno-border-bottom" aria-hidden="true"></div>
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--about">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo__icon">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 5 L30 55 M5 30 L55 30 M12 12 L48 48 M48 12 L12 48" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                <circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Дирекция национальных видов спорта</span>
+                    </a>
+                    <p class="footer__desc">Сохранение и развитие традиционных видов спорта народов нашей страны.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Навигация</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="sports.html">Виды спорта</a></li>
+                        <li><a href="events.html">Мероприятия</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Виды спорта</h4>
+                    <ul class="footer__links">
+                        <li><a href="sports.html#kuresh">Борьба курэш</a></li>
+                        <li><a href="sports.html#archery">Стрельба из лука</a></li>
+                        <li><a href="sports.html#horse">Конные скачки</a></li>
+                        <li><a href="sports.html#mas">Мас-рестлинг</a></li>
+                        <li><a href="sports.html#hapsagai">Хапсагай</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Контакты</h4>
+                    <ul class="footer__contacts">
+                        <li>📍 г. Москва, ул. Спортивная, д. 10</li>
+                        <li>📞 +7 (495) 123-45-67</li>
+                        <li>✉️ info@natsport.ru</li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="ВКонтакте">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.188 1.368 1.259 2.184 1.814.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.044-.073-.314-.661-1.618-1.869-1.366-1.265-1.183-1.06.462-3.246.998-1.328 1.396-2.14 1.272-2.488-.118-.332-.848-.244-.848-.244l-2.45.015s-.182-.025-.317.056c-.131.079-.216.263-.216.263s-.389 1.035-.907 1.916c-1.094 1.862-1.532 1.96-1.71 1.844-.416-.27-.312-1.083-.312-1.662 0-1.806.274-2.559-.533-2.753-.268-.065-.465-.107-1.149-.114-.878-.009-1.621.003-2.041.209-.28.137-.496.442-.365.46.163.021.531.099.726.364.252.342.243 1.11.243 1.11s.145 2.127-.338 2.39c-.332.181-.788-.189-1.765-1.884-.5-.868-.879-1.828-.879-1.828s-.073-.179-.203-.275c-.158-.117-.378-.154-.378-.154l-2.328.015s-.35.01-.478.162c-.114.135-.009.414-.009.414s1.826 4.274 3.894 6.426c1.895 1.973 4.047 1.843 4.047 1.843z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Дирекция национальных видов спорта. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

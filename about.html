@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — Дирекция национальных видов спорта</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ornaments.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="ethno-border-top" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <div class="logo__icon">
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 5 L30 55 M5 30 L55 30 M12 12 L48 48 M48 12 L12 48" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                            <circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__title">Дирекция</span>
+                        <span class="logo__subtitle">национальных видов спорта</span>
+                    </div>
+                </a>
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="sports.html" class="nav__link">Виды спорта</a></li>
+                        <li class="nav__item"><a href="events.html" class="nav__link">Мероприятия</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">О нас</a></li>
+                        <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">О Дирекции</h1>
+            <p class="page-header__subtitle">Наша миссия — сохранение и развитие национальных видов спорта</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-content__text">
+                        <h3>Наша история</h3>
+                        <p>Дирекция национальных видов спорта была создана с целью систематизации работы по сохранению, развитию и популяризации традиционных видов спорта народов нашей страны.</p>
+                        <p>За годы работы мы объединили усилия спортивных федераций, культурных организаций и государственных структур для создания единой системы развития национальных видов спорта на всех уровнях — от массового спорта до международных соревнований.</p>
+                        <p>Наша деятельность направлена на сохранение уникального спортивного наследия народов России и продвижение национальных видов спорта на мировой арене.</p>
+                    </div>
+                    <div class="about-image">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M100 20 L100 180 M20 100 L180 100 M40 40 L160 160 M160 40 L40 160" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                            <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="100" cy="100" r="15" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values -->
+        <section class="section" style="background: var(--color-white);">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Наши ценности</h2>
+                    <p class="section__subtitle">Принципы, которые лежат в основе нашей работы</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 5 L35 20 L50 20 L38 30 L42 45 L30 36 L18 45 L22 30 L10 20 L25 20 Z" fill="#C8963E" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Традиции</h3>
+                        <p class="value-card__text">Бережное сохранение и передача спортивного наследия от поколения к поколению.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="20" fill="none" stroke="#8B2500" stroke-width="2.5"/>
+                                <circle cx="30" cy="30" r="10" fill="none" stroke="#8B2500" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="3" fill="#8B2500"/>
+                                <path d="M30 10 L30 5 M30 50 L30 55 M10 30 L5 30 M50 30 L55 30" stroke="#8B2500" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Единство</h3>
+                        <p class="value-card__text">Объединение народов через спорт, укрепление межкультурного диалога и взаимопонимания.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 45 L30 15 L45 45" fill="none" stroke="#1B4332" stroke-width="2.5"/>
+                                <path d="M10 50 L50 50" stroke="#1B4332" stroke-width="2"/>
+                                <path d="M25 45 L30 15 L35 45" fill="#1B4332" opacity="0.15"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Развитие</h3>
+                        <p class="value-card__text">Постоянное совершенствование и адаптация традиционных видов спорта к современности.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Руководство</h2>
+                    <p class="section__subtitle">Команда профессионалов, преданных делу национального спорта</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-card__avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="22" r="12" fill="currentColor"/>
+                                <path d="M12 55 Q12 38 30 38 Q48 38 48 55" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="team-card__name">Иванов Алексей Петрович</h4>
+                        <p class="team-card__role">Директор</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card__avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="22" r="12" fill="currentColor"/>
+                                <path d="M12 55 Q12 38 30 38 Q48 38 48 55" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="team-card__name">Сулейманов Рустам Фаридович</h4>
+                        <p class="team-card__role">Заместитель директора</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card__avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="22" r="12" fill="currentColor"/>
+                                <path d="M12 55 Q12 38 30 38 Q48 38 48 55" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="team-card__name">Николаева Айыына Дмитриевна</h4>
+                        <p class="team-card__role">Руководитель спортивного отдела</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card__avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="22" r="12" fill="currentColor"/>
+                                <path d="M12 55 Q12 38 30 38 Q48 38 48 55" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="team-card__name">Батуев Баир Цыренович</h4>
+                        <p class="team-card__role">Руководитель международного отдела</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section" style="background: var(--color-white);">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Ключевые даты</h2>
+                    <p class="section__subtitle">Важные вехи в истории дирекции</p>
+                </div>
+                <div class="events-list">
+                    <article class="event-card">
+                        <div class="event-card__date">
+                            <span class="event-card__day" style="font-size: 1.5rem;">2015</span>
+                            <span class="event-card__month">год</span>
+                        </div>
+                        <div class="event-card__content">
+                            <h3 class="event-card__title">Основание Дирекции</h3>
+                            <p class="event-card__desc">Создание единой организации по координации развития национальных видов спорта.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-card__date">
+                            <span class="event-card__day" style="font-size: 1.5rem;">2018</span>
+                            <span class="event-card__month">год</span>
+                        </div>
+                        <div class="event-card__content">
+                            <h3 class="event-card__title">Международное признание</h3>
+                            <p class="event-card__desc">Подписание соглашений о сотрудничестве с международными спортивными федерациями.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-card__date">
+                            <span class="event-card__day" style="font-size: 1.5rem;">2021</span>
+                            <span class="event-card__month">год</span>
+                        </div>
+                        <div class="event-card__content">
+                            <h3 class="event-card__title">Расширение программы</h3>
+                            <p class="event-card__desc">Включение новых видов спорта и запуск программы подготовки тренеров по национальным дисциплинам.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-card__date">
+                            <span class="event-card__day" style="font-size: 1.5rem;">2024</span>
+                            <span class="event-card__month">год</span>
+                        </div>
+                        <div class="event-card__content">
+                            <h3 class="event-card__title">Всемирные игры</h3>
+                            <p class="event-card__desc">Включение мас-рестлинга и курэш в программу Всемирных игр — историческое достижение.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="ethno-border-bottom" aria-hidden="true"></div>
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--about">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo__icon">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 5 L30 55 M5 30 L55 30" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                                <circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Дирекция национальных видов спорта</span>
+                    </a>
+                    <p class="footer__desc">Сохранение и развитие традиционных видов спорта народов нашей страны.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Навигация</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="sports.html">Виды спорта</a></li>
+                        <li><a href="events.html">Мероприятия</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Виды спорта</h4>
+                    <ul class="footer__links">
+                        <li><a href="sports.html#kuresh">Борьба курэш</a></li>
+                        <li><a href="sports.html#archery">Стрельба из лука</a></li>
+                        <li><a href="sports.html#horse">Конные скачки</a></li>
+                        <li><a href="sports.html#mas">Мас-рестлинг</a></li>
+                        <li><a href="sports.html#hapsagai">Хапсагай</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Контакты</h4>
+                    <ul class="footer__contacts">
+                        <li>📍 г. Москва, ул. Спортивная, д. 10</li>
+                        <li>📞 +7 (495) 123-45-67</li>
+                        <li>✉️ info@natsport.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Дирекция национальных видов спорта. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

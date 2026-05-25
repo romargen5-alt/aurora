@@ -1,0 +1,322 @@
+/* ==========================================================================
+   Ethnic Ornament Styles
+   Traditional patterns and decorative elements
+   ========================================================================== */
+
+/* ---------- Top Ethnic Border ---------- */
+.ethno-border-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    z-index: 1001;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-primary) 0px,
+        var(--color-primary) 20px,
+        var(--color-secondary) 20px,
+        var(--color-secondary) 40px,
+        var(--color-accent) 40px,
+        var(--color-accent) 60px,
+        var(--color-secondary) 60px,
+        var(--color-secondary) 80px
+    );
+}
+
+/* ---------- Bottom Ethnic Border ---------- */
+.ethno-border-bottom {
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-secondary) 0px,
+        var(--color-secondary) 20px,
+        var(--color-primary) 20px,
+        var(--color-primary) 40px,
+        var(--color-accent) 40px,
+        var(--color-accent) 60px,
+        var(--color-secondary) 60px,
+        var(--color-secondary) 80px
+    );
+}
+
+/* ---------- Ethnic Divider ---------- */
+.ethno-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--space-2xl) auto;
+    max-width: 400px;
+    height: 40px;
+    position: relative;
+}
+
+.ethno-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-secondary) 20%,
+        var(--color-primary) 50%,
+        var(--color-secondary) 80%,
+        transparent
+    );
+}
+
+.ethno-divider::after {
+    content: '◆ ◆ ◆';
+    position: relative;
+    background: var(--color-cream);
+    padding: 0 var(--space-lg);
+    color: var(--color-secondary);
+    font-size: 0.7rem;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+.hero .ethno-divider::after {
+    background: transparent;
+    background: linear-gradient(135deg, var(--color-cream), var(--color-sand));
+    padding: 0 var(--space-xl);
+}
+
+/* ---------- Corner Ornaments ---------- */
+.ethno-corner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+}
+
+.ethno-corner--left {
+    left: 0;
+    top: 0;
+}
+
+.ethno-corner--right {
+    right: 0;
+    top: 0;
+}
+
+.ethno-corner::before,
+.ethno-corner::after {
+    content: '';
+    position: absolute;
+    background: var(--color-primary);
+}
+
+.ethno-corner--left::before {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+}
+
+.ethno-corner--left::after {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 40px;
+}
+
+.ethno-corner--right::before {
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 2px;
+}
+
+.ethno-corner--right::after {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 40px;
+}
+
+/* ---------- Hero Ornaments (large side patterns) ---------- */
+.hero__ornament-left,
+.hero__ornament-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 500px;
+    opacity: 0.06;
+    pointer-events: none;
+}
+
+.hero__ornament-left {
+    left: 20px;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 20px,
+        var(--color-primary) 20px,
+        var(--color-primary) 22px,
+        transparent 22px,
+        transparent 40px
+    ),
+    repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 20px,
+        var(--color-primary) 20px,
+        var(--color-primary) 22px,
+        transparent 22px,
+        transparent 40px
+    );
+}
+
+.hero__ornament-right {
+    right: 20px;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 20px,
+        var(--color-secondary) 20px,
+        var(--color-secondary) 22px,
+        transparent 22px,
+        transparent 40px
+    ),
+    repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 20px,
+        var(--color-secondary) 20px,
+        var(--color-secondary) 22px,
+        transparent 22px,
+        transparent 40px
+    );
+}
+
+/* ---------- Pattern Background (Stats section) ---------- */
+.ethno-pattern-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    background-image:
+        linear-gradient(45deg, var(--color-white) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--color-white) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--color-white) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--color-white) 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+}
+
+/* ---------- CTA Block Ornament ---------- */
+.cta-block__ornament {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-primary) 10%,
+        var(--color-secondary) 30%,
+        var(--color-primary) 50%,
+        var(--color-secondary) 70%,
+        var(--color-primary) 90%,
+        transparent
+    );
+}
+
+/* ---------- Section Decorative Lines ---------- */
+.section--sports::before,
+.section--news::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-secondary),
+        transparent
+    );
+}
+
+/* ---------- Page Header Ornament ---------- */
+.page-header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-primary) 0px,
+        var(--color-primary) 15px,
+        transparent 15px,
+        transparent 20px,
+        var(--color-secondary) 20px,
+        var(--color-secondary) 35px,
+        transparent 35px,
+        transparent 40px
+    );
+}
+
+.page-header::after {
+    content: '◆';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    background: var(--color-sand-light);
+    padding: 0 var(--space-sm);
+    z-index: 1;
+}
+
+/* ---------- Ethnic SVG Pattern for sections ---------- */
+.section--events::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0.03;
+    background: 
+        radial-gradient(circle, var(--color-primary) 1px, transparent 1px),
+        radial-gradient(circle, var(--color-primary) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+/* ---------- Responsive Ornaments ---------- */
+@media (max-width: 768px) {
+    .hero__ornament-left,
+    .hero__ornament-right {
+        display: none;
+    }
+
+    .ethno-corner {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ethno-corner--left::before,
+    .ethno-corner--right::before {
+        width: 25px;
+    }
+
+    .ethno-corner--left::after,
+    .ethno-corner--right::after {
+        height: 25px;
+    }
+}
